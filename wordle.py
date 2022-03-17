@@ -15,6 +15,7 @@ def main():
         # Look for win
         if guess == answer:
             print('Win!')
+            quit()
 
 
 # Generate the colors for each letter in the guess
