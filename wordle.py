@@ -4,9 +4,17 @@ def main():
     # The word
     answer = 'thing'
 
-    guess = input('Guess: ')
+    # Run game for six guesses
+    for x in range(6):
+        # Get a guess
+        guess = input('Guess: ')
 
-    print(check_guess(guess, answer))
+        # Check and print result
+        print(check_guess(guess, answer))
+
+        # Look for win
+        if guess == answer:
+            print('Win!')
 
 
 # Generate the colors for each letter in the guess
